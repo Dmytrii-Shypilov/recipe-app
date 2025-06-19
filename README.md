@@ -1,6 +1,6 @@
 # 🍽️ Recipe Finder App
 
-A modern web application built with **Next.js 13+ (App Router)** that allows users to search for recipes by dish name, cuisine, and preparation time. It displays detailed recipe information including ingredients, health score, dietary info, and cooking instructions.
+A modern web application built with **Next.js 13+ (App Router)** that allows users to search for recipes by dish name, cuisine, and preparation time. It displays detailed recipe information, including ingredients, health score, dietary info, and cooking instructions.
 
 ---
 
@@ -26,5 +26,17 @@ A modern web application built with **Next.js 13+ (App Router)** that allows use
 
 ---
 
-## 📁 Project Structure (App Directory)
+
+---
+
+## 📦 Setup Instructions
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Dmytrii-Shypilov/recipe-app.git
+cd recipe-finder-app
+npm run dev
+
+
 
