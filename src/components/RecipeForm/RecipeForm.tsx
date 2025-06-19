@@ -50,7 +50,7 @@ const RecipeForm: React.FC = () => {
           Dish Name
         </label>
         <input
-          placeholder="e.g. pasta"
+          placeholder="ex. pasta"
           onChange={onFormInputChange}
           id="dish"
           value={dish}
