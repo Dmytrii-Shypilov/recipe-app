@@ -1,16 +1,30 @@
-PROJECT STRUCTURE:
-src/
-├── app/
-│   ├── layout.tsx         # Global layout with <Suspense> and styles
-│   ├── page.tsx           # Home page with search form
-│   └── recipes/
-│       ├── page.tsx       # Recipe list page (SSR with searchParams)
-│       └── [id]/
-│           └── page.tsx   # Recipe details page (SSR)
-├── components/
-│   ├── RecipeCard.tsx
-│   ├── SearchForm.tsx
-├── api/
-│   └── index.ts           # Axios setup & API functions
-├── types/
-│   └── index.ts           # TypeScript interfaces
+# 🍽️ Recipe Finder App
+
+A modern web application built with **Next.js 13+ (App Router)** that allows users to search for recipes by dish name, cuisine, and preparation time. It displays detailed recipe information including ingredients, health score, dietary info, and cooking instructions.
+
+---
+
+## 🔧 Tech Stack
+
+- **Next.js 13+ (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Spoonacular API** (for recipe data fetching)
+- **Axios** (for API requests)
+
+---
+
+## 🚀 Features
+
+- 🔍 **Search Recipes** by dish name, cuisine, and time
+- 📦 **Server-Side Rendering (SSR)** with `revalidate` support
+- 🍽️ Detailed **recipe pages** with ingredients, health score, dietary tags, and instructions
+- 🧪 Responsive UI built with **Tailwind CSS**
+- 💾 API response **caching** (ISR) for performance
+- 📱 Mobile-first responsive design
+- 🛠️ Error handling with custom fallback page
+
+---
+
+## 📁 Project Structure (App Directory)
+
