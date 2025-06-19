@@ -11,7 +11,7 @@ type RecipePageProps = {
 
 export const revalidate = 60;
 
-const RecipePage: React.FC<RecipePageProps> = async ({ params }) => {
+const RecipePage = async ({ params }: RecipePageProps) => {
   const { id } = await params;
 
   const {
@@ -49,9 +49,12 @@ const RecipePage: React.FC<RecipePageProps> = async ({ params }) => {
         </div>
 
         <div>
-          <IngredientsTable ingredients={extendedIngredients}/>
+          <IngredientsTable ingredients={extendedIngredients} />
           <h2>Instructions</h2>
-          <div className="text-justify" dangerouslySetInnerHTML={{ __html: instructions }}></div>
+          <div
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: instructions }}
+          ></div>
         </div>
       </div>
     </main>
