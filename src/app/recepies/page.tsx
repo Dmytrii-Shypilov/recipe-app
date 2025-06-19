@@ -1,5 +1,5 @@
 import { QueryParams } from "@/types";
-import { getRecipes } from "@/api";
+import { getRecipes } from "@/api-requests";
 import RecepiesList from "@/components/RecepiesList";
 
 export const revalidate = 60;
