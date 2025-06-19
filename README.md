@@ -33,7 +33,7 @@ A modern web application built with **Next.js 13+ (App Router)** that allows use
 
 ```bash
 git clone https://github.com/Dmytrii-Shypilov/recipe-app.git
-cd recipe-finder-app
+cd recipe-app
 npm run dev
 
 
