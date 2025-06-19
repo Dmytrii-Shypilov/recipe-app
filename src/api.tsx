@@ -2,6 +2,7 @@ import axios from "axios";
 
 import { Recipe, QueryParams, RecipeInfo } from "./types";
 import { BASE_URL } from "./constants";
+import { AxiosError } from "axios";
 
 const API_KEY = process.env.API_KEY
 
@@ -27,8 +28,9 @@ export async function getRecipes({
   try {
     const res = await api.get("/recipes/complexSearch", { params });
     return res.data.results || [];
-  } catch (error: any) {
-    console.error("Axios error:", error.message);
+  } catch (error) {
+     const axiosError = error as AxiosError;
+    console.error("Axios error:", axiosError.message);
     throw new Error("Failed to fetch recipes");
   }
 }
@@ -38,8 +40,9 @@ export async function getRecipeInfo(id: string): Promise<RecipeInfo> {
   try {
     const res = await api.get(`/recipes/${id}/information`, { params });
     return res.data;
-  } catch (error: any) {
-    console.error("Axios error:", error.message);
+  } catch (error) {
+    const axiosError = error as AxiosError;
+    console.error("Axios error:", axiosError.message);
     throw new Error("Unable to get your recipe");
   }
 }
