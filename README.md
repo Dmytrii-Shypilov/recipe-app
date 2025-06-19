@@ -31,7 +31,7 @@ A modern web application built with **Next.js 13+ (App Router)** that allows use
 
 ## 📦 Setup Instructions
 
-### 1. Clone the repo
+### 1. Clone the repo and run using npm
 
 ```bash
 git clone https://github.com/Dmytrii-Shypilov/recipe-app.git
