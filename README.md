@@ -20,8 +20,6 @@ A modern web application built with **Next.js 13+ (App Router)** that allows use
 - 📦 **Server-Side Rendering (SSR)** with `revalidate` support
 - 🍽️ Detailed **recipe pages** with ingredients, health score, dietary tags, and instructions
 - 🧪 Responsive UI built with **Tailwind CSS**
-- 💾 API response **caching** (ISR) for performance
-- 📱 Mobile-first responsive design
 - 🛠️ Error handling with custom fallback page
 
 ---
